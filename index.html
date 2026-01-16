@@ -38,13 +38,23 @@
         <div class="ticket-caption">
           <p>Book your tickets now !</p>
         </div>
-        <div class="form">
-          <label>From </label>
-          <input type="text" placeholder="Enter starting place" />
-          <label>Destination </label>
-          <input type="text" placeholder="Enter destination place" />
-          <button>View flights</button>
-        </div>
+        <form action="/">
+          <label for="from">From </label>
+          <input
+            id="from"
+            type="text"
+            placeholder="Enter starting place"
+            required
+          />
+          <label for="destination">Destination </label>
+          <input
+            id="destination"
+            type="text"
+            placeholder="Enter destination place"
+            required
+          />
+          <button id="btn">View flights</button>
+        </form>
       </div>
       <div class="gallery" id="gallery">
         <p id="gallery-caption">Our Gallery</p>
@@ -157,6 +167,10 @@
       const reload = document.querySelector("#reload");
       reload.addEventListener("click", () => {
         location.reload();
+      });
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        alert("Currently no flights are available due to javascript issues!");
       });
     </script>
   </body>

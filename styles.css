@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgba(0, 0, 0, 0.574);
+  background-color: rgba(0, 0, 0, 0.893);
 }
 
 body::-webkit-scrollbar {
@@ -20,7 +20,8 @@ header {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.458);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   padding: 10px 0;
   border-bottom: rgb(255, 255, 255, 0.9);
   flex-wrap: wrap;
@@ -73,7 +74,6 @@ header {
   color: white;
   font-size: 17px;
   font-weight: 800;
-  transition: border-bottom 0.2s ease-in-out;
 }
 
 section {
@@ -102,7 +102,7 @@ section p {
   scroll-margin-top: 100px;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -112,7 +112,7 @@ section p {
   border-radius: 10px;
 }
 
-.form input {
+form input {
   border-radius: 10px;
   height: 40px;
   width: 300px;
@@ -131,29 +131,31 @@ input:focus {
   border: 1px solid white;
 }
 
-.form label {
+form label {
   padding-left: 05px;
   color: white;
   font-weight: 500;
 }
 
-.form button {
+form button {
   width: fit-content;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 04px;
   border: 1px solid rgba(141, 139, 139, 0.847);
   margin: auto;
   cursor: pointer;
   background-color: rgb(0, 34, 255);
   color: white;
   transition: transform 0.2s ease-in-out;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: -25px;
   outline: white;
-  font-weight: 550;
-  transition: background-color 0.1s ease-in-out;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.form button:hover {
+form button:hover {
   background-color: rgba(0, 21, 255, 0.725);
 }
 
@@ -182,7 +184,7 @@ input:focus {
   margin: 10px;
   margin-bottom: 40px;
   font-size: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 0px 4px 6px rgba(9, 177, 155, 0.747);
 }
 
@@ -193,7 +195,7 @@ input:focus {
 }
 
 .gallery-images h1 {
-  color: white;
+  color: rgba(255, 255, 255, 0.751);
   text-shadow: 0px 4px 6px rgba(9, 177, 155, 0.747);
 }
 
@@ -212,7 +214,7 @@ input:focus {
   padding: 10px;
   border-radius: 10px;
   text-align: justify;
-  color: rgba(255, 255, 255, 0.889);
+  color: rgba(255, 255, 255, 0.688);
   transition: transform 0.2s;
 }
 
@@ -243,7 +245,7 @@ input:focus {
   width: 500px;
   height: 500px;
   text-align: justify;
-  color: rgba(255, 255, 255, 0.889);
+  color: rgba(255, 255, 255, 0.727);
 }
 
 h1 {
@@ -254,7 +256,7 @@ h1 {
 }
 
 footer {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.164);
   color: rgba(224, 218, 218, 0.849);
 }
 
